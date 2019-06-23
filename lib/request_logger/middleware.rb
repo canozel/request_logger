@@ -30,6 +30,8 @@ REQUEST_METHOD SCRIPT_NAME SERVER_NAME SERVER_PORT SERVER_PROTOCOL SERVER_SOFTWA
           @logger.info("#{key}: " + env[key] + "\n")
         end
       end
+
+      @logger.info(env)
       @logger.info("-----END-----\n")
       env
     end
